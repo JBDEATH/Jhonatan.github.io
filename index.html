@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonatan Rojas</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.xtrafondos.com/wallpapers/vertical/estrellas-en-el-universo-morado-4465.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            
+        }
+
+        .header {
+            background-image: url('https://scontent-bog2-2.xx.fbcdn.net/v/t39.30808-6/321401302_842216753660416_2740592096410545566_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=XONM6I6Ga3oAX8fCbkx&_nc_ht=scontent-bog2-2.xx&oh=00_AfAIEN-3T5wHNS5IFviPOZEdDHjdwMzhi-ekq8-vO3Jg5w&oe=65DC07A9'); /* Ruta de la imagen de fondo para el header */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 80px 0;
+            color: #fcfcfc;
+            box-shadow: 0 0 10px rgba(250, 250, 250, 0.253);
+        }
+
+        .header h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambio de fuente para el título */
+            margin-bottom: 50px;
+        }
+
+        .name {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 46px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.829); /* Fondo blanco con transparencia */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .person-info {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .person-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+        .person-info .age {
+            position: absolute;
+            top: 1px;
+            left: 18px;
+            background-color: rgba(0, 0, 0, 0);
+            color: #020101;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .services {
+            margin-bottom: 20px;
+        }
+
+        .services h2 {
+            margin-bottom: 10px;
+            cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el título */
+        }
+
+        .services p {
+            display: none; /* Oculta los párrafos por defecto */
+        }
+
+        .social-icons {
+            border-top: 1px solid #000;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #0077b5;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 30px;
+            margin: 0 10px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        .person-info .description {
+            font-size: 14px; /* Tamaño de fuente más pequeño */
+            margin-top: 20px; /* Espacio entre la imagen y los párrafos */
+        }
+
+        .person-info .description p {
+            margin: 10px 0; /* Espacio entre los párrafos */
+        }
+
+        .person-info .description hr {
+            border: none;
+            border-left: 1px solid #00000000; /* Color y estilo de la línea vertical */
+            height: 10px; /* Altura de la línea vertical */
+            margin: 0 20px; /* Margen para separar la línea de los párrafos */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Jhonatan<br>Rojas</div>
+    </div>
+
+    <div class="container">
+        <div class="person-info">
+            <img src="HIS.jpg" alt="Jhonatan Rojas">
+            <div class="age">Tengo 17 Años</div>
+            <div class="description">
+                <p>Mi nombre es Jhonatan Rojas. Me apasiona el mundo del trading y estoy en constante formación para convertirme en un trader experto. Actualmente, formo parte de una academia de educación y tecnología llamada DeltaAcademy, donde estoy adquiriendo los conocimientos y las habilidades necesarias para destacar en el mundo del mercado financiero.</p>
+                <hr> <!-- Línea vertical -->
+                <p>Desde una temprana edad, he sentido una fascinación por los mercados financieros y la economía en general. Mi objetivo es convertir esta pasión en mi profesión y alcanzar el éxito en el mundo del trading. En DeltaAcademy, he encontrado el apoyo y la orientación necesarios para desarrollarme como trader, aprendiendo de expertos en el campo y utilizando las últimas herramientas y tecnologías disponibles.</p>
+            </div>
+        </div>
+        
+        <div class="services">
+
+            <h2 onclick="toggleText('text1')">DELTA DIGITAL ☟</h2>
+            <p id="text1" style="display:none;">NUESTRA MISION ES EMPODERAR CADA PERSONA A ADUEÑARSE DEL FUTURO.</p>
+            
+            <h2 onclick="toggleText('text2')">COMPAÑIA ☟</h2>
+            <p id="text2" style="display:none;">EN DELTA DIGITAL ESTAMOS DEDICADOS A EDUCAR Y AYUDAR A CRECER A CADA PERSONA FINANCIERAMENTE POR MEDIO DE LA EDUCACIÓN EN INGRESOS DIGITALES Y NUEVAS TECNOLOGÍAS.</p>
+            
+            <h2 onclick="toggleText('text3')">QUIENES SOMOS ☟</h2>
+            <p id="text3" style="display:none;">EMPRENDEDORES PIONEROS REUNIDOS PARA CUMPLIR UN PROPOSITO JUNTOS.</p>
+        </div>
+
+        <div class="social-icons">
+                <a href="https://www.facebook.com/deltadigitalpro/"><img src="https://i.pinimg.com/736x/df/c1/53/dfc1530703e0f92a713319ad9085cd2a.jpg" style="width: 30px; height: 30px;"></a>
+                <a href="https://www.instagram.com/deltadigitalpro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="https://i.pinimg.com/564x/8d/66/9b/8d669b63358117e3ff9fb28f1d7bb3c7.jpg" style="width: 30px; height: 30px;"></a>
+                <a href="https://www.deltadigital.pro"><img src="https://scontent-bog2-2.xx.fbcdn.net/v/t39.30808-6/321401302_842216753660416_2740592096410545566_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=XONM6I6Ga3oAX8fCbkx&_nc_ht=scontent-bog2-2.xx&oh=00_AfAIEN-3T5wHNS5IFviPOZEdDHjdwMzhi-ekq8-vO3Jg5w&oe=65DC07A9" style="width: 30px; height: 30px;"></a>
+                <!-- Agrega más enlaces a redes sociales según sea necesario -->
+            </div>
+    </div>
+
+    <script>
+        function toggleText(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
